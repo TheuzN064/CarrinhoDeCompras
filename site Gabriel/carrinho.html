@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <span>Carrinho de Compras</span>
+    </header>
+    <main>
+      <div class="page-title">Seu Carrinho</div>
+      <div class="content">
+        <section>
+          <table id="cart-table">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Itens do carrinho vão aqui -->
+            </tbody>
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+            <div class="info">
+              <div><span>Sub-total</span><span id="subtotal">R$ 0,00</span></div>
+              <div><span>Frete</span><span>Gratuito</span></div>
+              <footer>
+                <span>Total</span>
+                <span id="total">R$ 0,00</span>
+              </footer>
+            </div>
+            <button>Finalizar Compra</button>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrinho de Compras</title>
+    <title>Loja - Produtos</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -13,118 +12,40 @@
   </head>
   <body>
     <header>
-      <span>Carrinho de compras do <b>LUCENAAAA</b></span>
+      <span>Bem-vindo à <b>Loja</b></span>
+      <a href="carrinho.html">
+        <i class="bx bx-cart"></i> Carrinho (<span id="cart-count">0</span>)
+      </a>
     </header>
     <main>
-      <div class="page-title">Seu Carrinho</div>
-      <div class="content">
-        <section>
-          <table>
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
-                <th>Total</th>
-                <th>-</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="cart-item">
-                <td>
-                  <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="Produto 1" />
-                    <div class="info">
-                      <div class="name">Nome do produto 1</div>
-                      <div class="category">Categoria 1</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="price">R$ 120</td>
-                <td>
-                  <div class="qty">
-                    <button class="decrease"><i class="bx bx-minus"></i></button>
-                    <span class="quantity">2</span>
-                    <button class="increase"><i class="bx bx-plus"></i></button>
-                  </div>
-                </td>
-                <td class="total">R$ 240</td>
-                <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                </td>
-              </tr>
-              <tr class="cart-item">
-                <td>
-                  <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="Produto 2" />
-                    <div class="info">
-                      <div class="name">Nome do produto 2</div>
-                      <div class="category">Categoria 2</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="price">R$ 120</td>
-                <td>
-                  <div class="qty">
-                    <button class="decrease"><i class="bx bx-minus"></i></button>
-                    <span class="quantity">2</span>
-                    <button class="increase"><i class="bx bx-plus"></i></button>
-                  </div>
-                </td>
-                <td class="total">R$ 240</td>
-                <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                </td>
-              </tr>
-              <tr class="cart-item">
-                <td>
-                  <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="Produto 3" />
-                    <div class="info">
-                      <div class="name">Nome do produto 3</div>
-                      <div class="category">Categoria 3</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="price">R$ 120</td>
-                <td>
-                  <div class="qty">
-                    <button class="decrease"><i class="bx bx-minus"></i></button>
-                    <span class="quantity">2</span>
-                    <button class="increase"><i class="bx bx-plus"></i></button>
-                  </div>
-                </td>
-                <td class="total">R$ 240</td>
-                <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <aside>
-          <div class="box">
-            <header>Resumo da compra</header>
-            <div class="info">
-              <div><span>Sub-total</span><span id="subtotal">R$ 720</span></div>
-              <div><span>Frete</span><span>Gratuito</span></div>
-              <div>
-                <button id="applyCoupon">
-                  Adicionar cupom de desconto
-                  <i class="bx bx-right-arrow-alt"></i>
-                </button>
-              </div>
-            </div>
-            <footer>
-              <span>Total</span>
-              <span id="total">R$ 720</span>
-            </footer>
+      <div class="page-title">Produtos</div>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://picsum.photos/100/120" alt="Produto 1" />
+          <div class="info">
+            <div class="name">Produto 1</div>
+            <div class="price">R$ 100</div>
+            <button class="add-to-cart" data-id="1" data-name="Produto 1" data-price="100">Adicionar ao Carrinho</button>
           </div>
-          <button id="checkoutButton">Finalizar Compra</button>
-        </aside>
+        </div>
+        <div class="product">
+          <img src="https://picsum.photos/100/120" alt="Produto 2" />
+          <div class="info">
+            <div class="name">Produto 2</div>
+            <div class="price">R$ 150</div>
+            <button class="add-to-cart" data-id="2" data-name="Produto 2" data-price="150">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://picsum.photos/100/120" alt="Produto 3" />
+          <div class="info">
+            <div class="name">Produto 3</div>
+            <div class="price">R$ 200</div>
+            <button class="add-to-cart" data-id="3" data-name="Produto 3" data-price="200">Adicionar ao Carrinho</button>
+          </div>
+        </div>
       </div>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
